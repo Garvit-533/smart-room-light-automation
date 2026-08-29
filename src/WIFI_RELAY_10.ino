@@ -24,25 +24,7 @@
 #include <EEPROM.h>
 #include <ESP8266mDNS.h>
 #include <ArduinoOTA.h>
-
-// ================================================================
-//  USER CONFIGURATION — change these before uploading
-// ================================================================
-const char* WIFI_SSID    = "";
-const char* WIFI_PASS    = "";   // ⚠ see note below
-// NOTE: To avoid storing your WiFi password in source code, consider
-//       replacing the two lines above with the WiFiManager library,
-//       which lets you enter credentials via a captive-portal at first boot.
-
-const char* OTA_PASSWORD = "";        // Change before deploying
-
-const char* HOSTNAME     = "";         // Reachable at http://diningroom.local
-
-// Static IP
-IPAddress staticIP(192, 168, 1, 101);
-IPAddress gateway (192, 168, 1,   1);
-IPAddress subnet  (255, 255, 255, 0);
-IPAddress dns     (  8,   8,   8, 8);
+#include "config.h"
 
 // ================================================================
 //  TIMING CONSTANTS  (milliseconds)
