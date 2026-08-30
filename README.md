@@ -54,6 +54,21 @@ A critical part of the hardware design was routing the 10-channel active-low rel
 * Core Libraries: `ESP8266WiFi`, `ESP8266WebServer`, `ESP8266mDNS`, `ArduinoOTA`, `EEPROM`.
 
 ### Installation
-1. Clone the repository:
-  ```bash
-   git clone [https://github.com/Garvit-533/smart-room-light-automation.git](https://github.com/Garvit-533/smart-room-light-automation.git)
+
+**Step 1: Clone the repository**
+```bash
+git clone https://github.com/Garvit-533/smart-room-light-automation.git
+```
+
+**Step 2: Secure Credentials** 
+* Copy `src/config.example.h` and rename it to `src/config.h`.
+* Open `config.h` and input your local Wi-Fi SSID, Password, and a secure OTA Password.
+
+**Step 3: Open in Arduino IDE**
+* Open `src/WIFI_RELAY_10.ino` in the Arduino IDE.
+
+**Step 4: Compile and Upload**
+* Select **NodeMCU 1.0 (ESP-12E Module)** and compile/upload via USB.
+
+**Step 5: Access the Dashboard**
+* Navigate to `[http://diningroom.local](http://diningroom.local)` in your web browser.
